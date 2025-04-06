@@ -18,11 +18,17 @@ More importantly, it focuses on real usability: instead of limiting recognition 
 
 ## Project Structure
 
-Mnist_numbers/ ├── mnist_cnn.py # Script to train the CNN model using MNIST ├── test_model.py # Script to test the model with custom PNG images ├── numberdetector.h5 # Trained model saved in HDF5 format └── numerospaint/ # Folder containing hand-drawn digit images (PNG format) ├── zero.png ├── one.png ├── ... └── nine.png
-
-markdown
-Copiar
-Editar
+```
+Mnist_numbers/
+├── mnist_cnn.py         # Script to train the CNN model using MNIST
+├── test_model.py        # Script to test the model with custom PNG images
+├── numberdetector.h5    # Trained model saved in HDF5 format
+└── numerospaint/        # Folder containing hand-drawn digit images (PNG format)
+    ├── zero.png
+    ├── one.png
+    ├── ...
+    └── nine.png
+```
 
 ## Features
 
@@ -30,10 +36,16 @@ Editar
 - Saves the model as an `.h5` file.
 - Allows prediction from hand-drawn images (square, grayscale).
 
+### Example Input Image
+
+Below is an example of an input digit image from the `numerospaint/` folder:
+
+![Example digit input](https://github.com/pelayo-felgueroso/mnist-paint-classifier/blob/main/numerospaint/six.png?raw=true)
+
 ## Results
 
-- Achieves **~99% accuracy** on MNIST test set.  
-- Achieves **100% accuracy** when classifying Paint images with clear digit shapes and correct format.  
+- Achieves ~99% accuracy on MNIST test set.  
+- Achieves 100% accuracy when classifying Paint images with clear digit shapes and correct format.
 
 ## Requirements
 
@@ -54,38 +66,41 @@ Run `mnist_cnn.py` to train the CNN and save the model:
 
 ```bash
 python mnist_cnn.py
-This generates a file called numberdetector.h5.
+```
 
-2. Test with Custom Images
-Place your hand-drawn digit PNGs (black background, white number, square aspect ratio) into the numerospaint/ folder. Then run:
+This generates a file called `numberdetector.h5`.
 
-bash
-Copiar
-Editar
+### 2. Test with Custom Images
+
+Place your hand-drawn digit PNGs (black background, white number, square aspect ratio) into the `numerospaint/` folder. Then run:
+
+```bash
 python test_model.py
+```
+
 The script will:
 
-Load the specified image
+- Load the specified image  
+- Preprocess and resize it to 28x28  
+- Predict the digit and display the confidence  
 
-Preprocess and resize it to 28x28
+### Example Output
 
-Predict the digit and display the confidence
-
-Example Output
-csharp
-Copiar
-Editar
+```
 The model predicts the image is the number: 4, with confidence: 0.99987
-Image Format Guidelines
-Format: PNG
+```
 
-Aspect Ratio: Square
+## Image Format Guidelines
 
-Background: Black
+- Format: PNG  
+- Aspect Ratio: Square  
+- Background: Black  
+- Digit: White (centered and clearly drawn)  
 
-Digit: White (centered and clearly drawn)
+## Author
 
-Author
-Pelayo Felgueroso
+[Pelayo Felgueroso](https://github.com/pelayo-felgueroso)
+
+---
 
 Feel free to fork, modify, and improve this repository. It's designed for learning and experimentation with computer vision and CNNs using TensorFlow.
