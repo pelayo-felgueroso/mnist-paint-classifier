@@ -36,11 +36,21 @@ Mnist_numbers/
 - Saves the model as an `.h5` file.
 - Allows prediction from hand-drawn images (square, grayscale).
 
-### Example Input Image
+### Input Digit Samples
 
-Below is an example of an input digit image from the `numerospaint/` folder:
+These are all the digits used as input examples from the `numerospaint/` folder:
 
-![Example digit input](https://github.com/pelayo-felgueroso/mnist-paint-classifier/blob/main/numerospaint/six.png?raw=true)
+<img src="https://github.com/pelayo-felgueroso/mnist-paint-classifier/blob/main/numerospaint/zero.png?raw=true" width="40"/>
+<img src="https://github.com/pelayo-felgueroso/mnist-paint-classifier/blob/main/numerospaint/one.png?raw=true" width="40"/>
+<img src="https://github.com/pelayo-felgueroso/mnist-paint-classifier/blob/main/numerospaint/two.png?raw=true" width="40"/>
+<img src="https://github.com/pelayo-felgueroso/mnist-paint-classifier/blob/main/numerospaint/three.png?raw=true" width="40"/>
+<img src="https://github.com/pelayo-felgueroso/mnist-paint-classifier/blob/main/numerospaint/four.png?raw=true" width="40"/>
+<img src="https://github.com/pelayo-felgueroso/mnist-paint-classifier/blob/main/numerospaint/five.png?raw=true" width="40"/>
+<img src="https://github.com/pelayo-felgueroso/mnist-paint-classifier/blob/main/numerospaint/six.png?raw=true" width="40"/>
+<img src="https://github.com/pelayo-felgueroso/mnist-paint-classifier/blob/main/numerospaint/seven.png?raw=true" width="40"/>
+<img src="https://github.com/pelayo-felgueroso/mnist-paint-classifier/blob/main/numerospaint/eight.png?raw=true" width="40"/>
+<img src="https://github.com/pelayo-felgueroso/mnist-paint-classifier/blob/main/numerospaint/nine.png?raw=true" width="40"/>
+
 
 ## Results
 
